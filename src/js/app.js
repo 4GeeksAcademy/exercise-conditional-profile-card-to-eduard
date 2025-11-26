@@ -34,9 +34,9 @@ function render(variables = {}) {
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${variables.name == null ? "Eduard" : variables.name} ${
-    variables.lastName == null ? "Cardenas" : variables.name
+    variables.lastName == null ? "Cardenas" : variables.lastName
   }</h1>
-          <h2>${variables.role == null ? "Desarrollador" : variables.name}</h2>
+          <h2>${variables.role == null ? "Desarrollador" : variables.role}</h2>
           <h3>${variables.country == null ? "Canada" : variables.country} ${
     variables.city == null ? "Toronto" : variables.city
   }</h3>
@@ -55,7 +55,9 @@ function render(variables = {}) {
                 : variables.linkedin
             }"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/${
-              variables.instagram == null ? "outlander.ve.co" : variables.inst
+              variables.instagram == null
+                ? "outlander.ve.co"
+                : variables.instagram
             }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
